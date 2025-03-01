@@ -156,26 +156,30 @@
       }
     }
 
-    /* ---- Celulares pequeños (<= 480px) ---- */
+ /* ---- Para celulares (<= 480px) ---- */
     @media (max-width: 480px) {
+      /* Aún más altura para que el texto quepa bien */
+      #header-image-container {
+        padding-bottom: 50%;
+      }
       #protocolo-title {
         font-size: 1.5em;
+        line-height: 1.2;
       }
-
       #protocol-description {
         padding: 20px;
         font-size: 0.9em;
       }
-
       .buttons-container {
         padding: 20px;
       }
-
       .button {
         font-size: 0.9em;
         padding: 8px 12px;
       }
     }
+
+    
 
   </style>
 </head>
