@@ -1,0 +1,142 @@
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+#header-logo {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si decides tener un alto específico para este contenedor */
+    padding: 10px;
+}
+
+#logo {
+    height: auto; /* Asegúrate de que el logo mantenga su proporción. Puedes ajustar el alto específico si es necesario */
+    width: 90%;
+    /* No necesitas definir un width específico para #logo a menos que quieras forzar un tamaño particular */
+}
+
+#header-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+#header-image {
+    width: 100%;
+    height: auto;
+}
+
+#protocolo-title {
+    position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3.5em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#protocol-description {
+    position: relative;
+    background-color: white; /* Azulino, o el color que prefieras */
+    color: #000000; /* Ajusta si necesitas otro color */
+    padding: 100px;
+    font-size: 30px; /* Ajusta el tamaño de fuente según lo necesites */
+    text-align: justify;
+
+}
+
+ /* Botones con estilo */
+ .button {
+    display: inline-block;
+    padding: 20px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6200;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.5em; /* Ajusta según la necesidad */
+
+  }
+  
+  .button:hover {
+    background-color: #0077ff; /* Cambia a azulino cuando el cursor está sobre el botón */
+    /* Opcional: cambiar otras propiedades como el color del texto si se desea */
+}
+
+  /* Ajusta la posición de los botones para que estén uno al lado del otro */
+  .buttons-container {
+    text-align: center;
+    background-color: lightblue; /* Azulino, o el color que prefieras */
+    padding: 100px;
+
+  }
+
+  @media (max-width: 900px) {
+    #protocolo-title {
+        font-size: 2vh; /* Reducir el tamaño de la fuente para móviles */
+    }
+    
+    #protocol-description {
+        padding: 20px; /* Reducir el padding para móviles */
+        font-size: 1em; /* Reducir el tamaño de la fuente para móviles */
+    }
+
+    .buttons-container {
+        padding: 20px; /* Reducir el padding para móviles */
+    }
+
+    .button {
+        font-size: 1em; /* Reducir el tamaño de la fuente en los botones para móviles */
+        padding: 10px 15px; /* Reducir el padding de los botones */
+    }
+
+    /* Asegúrate de que las imágenes no sobrepasen el ancho de la pantalla */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+            <img src="D:/2. CONSULTORIAS/3. OPS/BD Y DASBOARD RESIDUOS/FORMULARIO WEB RESIDUOS SOLIDOS/images/logo.png" alt="Logo" id="logo">
+        </div>
+        <div id="header-image-container">
+            <img src="D:/2. CONSULTORIAS/3. OPS/BD Y DASBOARD RESIDUOS/FORMULARIO WEB RESIDUOS SOLIDOS/images/fondo.png" alt="Header Image" id="header-image">
+            <h1 id="protocolo-title">ENCUESTA REGIONAL GESTIÓN DE RESIDUOS EN ESTABLECIMIENTOS DE SALUD EN LATINOAMERICA Y EL CARIBE</h1>
+        </div>
+    </header>
+    <section id="protocol-description">
+        <p>Esta plataforma web contiene la encuesta regional para recopilar información sobre la gestión de residuos en los establecimientos de salud en América Latina y el Caribe (LAC). La información obtenida permitirá mejorar la planificación, normativas y estrategias para una gestión sostenible de residuos sanitarios.</p>
+        <p>La encuesta es desarrollada por la Organización Panamericana de la Salud (OPS) en colaboración con distintas entidades gubernamentales y sanitarias de la región. Está dirigida a instituciones responsables de la gestión de residuos sanitarios, ministerios de salud, medio ambiente y establecimientos de salud en general.</p>
+        <p>Los datos recolectados serán utilizados para la creación de estrategias y programas que mejoren la sostenibilidad ambiental y el cumplimiento de normativas en la gestión de residuos sanitarios. Se espera que esta iniciativa contribuya a la mejora de las políticas públicas y la eficiencia en el manejo de residuos.</p>
+    </section>
+    <div class="buttons-container">
+        <a href="encuesta.pdf" class="button">Descargar Encuesta en PDF</a>
+        <a href="https://form.123formbuilder.com/6801500/ops-residuos" class="button">Responder Encuesta Virtual</a>
+        <a href="https://forms.example.com/resultado" class="button">Resultados de la Encuesta Virtual</a>
+    </div>
+</body>
+</html>
